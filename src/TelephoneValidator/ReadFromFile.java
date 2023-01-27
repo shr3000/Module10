@@ -34,7 +34,7 @@ public class ReadFromFile {
     @Override
     public String toString() {
         return "ReadFromFile{" +
-                "queue=" + queue +
+                "queue=" + queue.toString() +
                 '}';
     }
 }
