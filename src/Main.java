@@ -1,6 +1,8 @@
 import TelephoneValidator.ReadFromFile;
 import TelephoneValidator.Validator;
+import jsonGenerator.Generator;
 
+import java.util.ArrayDeque;
 import java.util.Queue;
 
 public class Main {
@@ -10,5 +12,9 @@ public class Main {
         for (String s: queue){
             Validator.validationPhone(s);
         }
+        queue.clear();
+        rff = new ReadFromFile("src/jsonGenerator/file.txt");
+        queue = rff.reading();
+        Generator.gsonGen((ArrayDeque<String>) queue);
     }
 }

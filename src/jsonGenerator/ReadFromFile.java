@@ -1,4 +1,4 @@
-package TelephoneValidator;
+package jsonGenerator;
 
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -6,6 +6,7 @@ import java.io.InputStream;
 import java.util.ArrayDeque;
 import java.util.Queue;
 import java.util.Scanner;
+
 
 public class ReadFromFile {
     private String path;
@@ -31,4 +32,10 @@ public class ReadFromFile {
         return queue;
     }
 
+    @Override
+    public String toString() {
+        return "ReadFromFile{" +
+                "queue=" + queue.toString() +
+                '}';
+    }
 }
