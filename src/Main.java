@@ -1,3 +1,4 @@
+import SortWords.Sort;
 import TelephoneValidator.ReadFromFile;
 import TelephoneValidator.Validator;
 import jsonGenerator.Generator;
@@ -7,6 +8,7 @@ import java.util.Queue;
 
 public class Main {
     public static void main(String[] args) {
+        /*
         ReadFromFile rff = new ReadFromFile("src/TelephoneValidator/file.txt");
         Queue<String> queue = rff.reading();
         for (String s: queue){
@@ -16,5 +18,8 @@ public class Main {
         rff = new ReadFromFile("src/jsonGenerator/file.txt");
         queue = rff.reading();
         Generator.gsonGen((ArrayDeque<String>) queue);
+        */
+        Sort sort = new Sort("src/SortWords/words.txt");
+        sort.wordsCounter();
     }
 }
