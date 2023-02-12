@@ -1,0 +1,8 @@
+
+‚
+java:S1319#"gThe type of "queue" should be an interface such as "Deque" rather than the implementation "ArrayDeque".(ŒÒÓÄúÿÿÿÿ
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(æžï´
+V	java:S125"<This block of commented-out lines of code should be removed.(ÒÌâ–øÿÿÿÿ
+U
+java:S1118!":Add a private constructor to hide the implicit public one.(øÃÔ•øÿÿÿÿ
+V	java:S1250"<This block of commented-out lines of code should be removed.(ûù¡²þÿÿÿÿ
